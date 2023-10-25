@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(55, 117, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    color: rgb(48, 56, 63);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid;
+    border-color: rgb(62, 122, 231);
+}
+
+button{
+    border-radius: 1em;
+    border: 0;
+    border: 2px solid  rgb(55, 117, 231);
+    background-color:  rgb(62, 122, 231);
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    padding: 1.25em 2em;
+    position: relative;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &::before {
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px , 0 0.6em 0 0 rgba( 0.6);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        width: 100%;
+    }
+
+    &:hover {
+        transform: translate(0, 0.25em);
+
+        &::before {
+            box-shadow: 0 0 0 2px , 0 0.45em 0 0 rgba(0.8);
+            transform: translate3d(0, 0.5em, -1em);
+        }
+    }
+
+    &:active {
+        
+        transform: translate(0, 0.75em);
+
+        &::before {
+            box-shadow: 0 0 0 3px , 0 0;
+            transform: translate3d(0, 0, -1em);
+        }
+    }
+}
+
+#tarefas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+    padding: 15px;
+}

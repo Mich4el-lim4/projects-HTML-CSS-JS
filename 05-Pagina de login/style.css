@@ -1,0 +1,85 @@
+*{
+    margin: 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: url(img/planoDeFundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(47, 207, 207, 0.884);
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    color: aliceblue;
+}
+
+input{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.buttonLogin{
+    background-color: #00aeff;
+    color: #fff;
+    box-shadow: 0 5px #0474a8;
+    border-radius: 2.1px;
+}
+
+.buttonLogin:hover{
+    background-color: #0585c0;
+    color: #fff;
+    box-shadow: 0 5px #014d70;
+    border-radius: 2.1px;
+}
+
+.buttonLogin:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+#forget{
+    display: none;
+}
+
+p{
+    color: aliceblue;
+    font-size: 12px;
+}
+
+a{
+    color: rgb(221, 158, 42);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00aeff;
+}
